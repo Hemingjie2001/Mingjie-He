@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贺明杰 - 皮肤科医师/研究生</title>
+    <style>
+        :root {
+            --primary-color: #2a5c8d;
+            --secondary-color: #4a90e2;
+            --accent-color: #63b3ed;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 0 4rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .profile-img {
+            width: 240px;
+            height: auto;
+            border-radius: 8px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: -70px auto 2rem;
+            display: block;
+            object-fit: contain;
+        }
+        .section-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--accent-color);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: '●';
+            position: absolute;
+            left: -5px;
+            color: var(--secondary-color);
+            font-size: 1.4em;
+        }
+        .publication-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .publication-item {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f8f9fa;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.3em 0.8em;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-left: 0.8rem;
+            vertical-align: middle;
+        }
+        .q1 { background: #1b9e77; color: white; }  /* 深蓝绿 */
+        .q2 { background: #d95f02; color: white; }  /* 橙红 */
+        .q3 { background: #7570b3; color: white; }  /* 紫色 */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .self-evaluation {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            .profile-img {
+                width: 200px;
+                margin-top: -50px;
+            }
+            .section-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>贺明杰 Ming-jie He</h1>
+        <p>皮肤病与性病学专业硕士 | 擅长生物信息学及大数据挖掘</p>
+    </header>
+    
+    <div class="container">
+        <img src="hemingjie.jpg" alt="贺明杰医师照片" class="profile-img">
+
+        <div class="section-card">
+            <h2>基本信息</h2>
+            <div class="contact-info">
+                <p>姓名：贺明杰</p>
+                <p>性别：男</p>
+                <p>民族：汉族</p>
+                <p>出生日期：2001年02月</p>
+                <p>政治面貌：中共党员</p>
+                <p>联系方式：+86 15238917691</p>
+                <p>电子邮箱：hmj15238917691@163.com | hmj15238917691@gmail.com</p>
+                <p>目前工作（学习）单位：郑州大学第一附属医院皮肤科</p>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>郑州大学临床医学(5+3一体化专业)</h3>
+                </div>
+                <div class="timeline-item">
+                    <h3>医学硕士 - 皮肤病与性病学</h3>
+                    <p>郑州大学第一附属医院 (2024.09-2027.06 预计)</p>
+                    <ul>
+                        <li>研究方向：自身免疫性皮肤病的多组学研究</li>
+                        <li>导师：张江安 教授</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>医学学士 - 临床医学</h3>
+                    <p>郑州大学 (2019.09-2024.07)</p>
+                    <ul>
+                        <li>GPA: 3.64/4.0 (专业前3%：5/172)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>研究技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🧬 生物信息学</h3>
+                    <ul>
+                        <li>多组学整合分析（全基因组/转录组/单细胞）</li>
+                        <li>孟德尔随机化及常规生信分析</li>
+                        <li>R语言编程与Shiny可视化</li>
+                        <li>机器学习在大数据分析中的应用</li>
+                        <li>FAERS、NHANES等临床数据库挖掘</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🔬 实验技术</h3>
+                    <ul>
+                        <li>分子生物学：Western blot、qPCR、ELISA</li>
+                        <li>免疫技术：免疫共沉淀、免疫组化、免疫荧光</li>
+                        <li>细胞培养技术</li>
+                        <li>临床样本处理与生物库管理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="section-card">
+            <h2>研究成果</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <strong>He MJ</strong>, Wang YJ, Ran DL, et al. Relationship between bullous pemphigoid and malignancy: A Mendelian randomization study. 
+                    <em>J Dermatol.</em> 2024;51(3):403-408. PMID: 38212903
+                    <span class="badge q2">JCR Q2</span>
+                    <span class="badge">第一作者</span>
+                </li>
+                <li class="publication-item">
+                    <strong>He MJ</strong>, Ran DL, Zhang ZY, et al. Exploring the roles and potential therapeutic strategies of inflammation and metabolism in vitiligo...
+                    <em>Front Genet.</em> 2024;15:1385339. PMID: 38660673
+                    <span class="badge q2">JCR Q2</span>
+                    <span class="badge">第一作者</span>
+                </li>
+                <li class="publication-item">
+                    <strong>He MJ</strong>, Zhang ZY, Ran DL, Fu DS, He Q, Zhao PY, Yin GW, Zhang JA. The causal relationship between uveitis and psoriatic arthritis: A bidirectional Mendelian randomization study.
+                    <em>Indian Journal of Dermatology, Venereology and Leprology.</em> 2025; In Press. 
+                    <span class="badge q1">JCR Q1</span>
+                    <span class="badge">第一作者</span>
+                </li>
+                <li class="publication-item">
+                    Hu Y, Wang SB, <strong>He MJ</strong>. From Phenotype to Molecules: Unveiling the Genetic and Immunological Bridges...
+                    <em>Clin Cosmet Investig Dermatol.</em> 2024;17:2475-2486. PMID: 39524107
+                    <span class="badge q2">JCR Q2</span>
+                    <span class="badge">通讯作者</span>
+                </li>
+                <li class="publication-item">
+                    Dong ZY#, <strong>He MJ#</strong>, Hu Y#, et al. Unveiling the Mechanism of Retinoic Acid Therapy for Cutaneous Warts...
+                    <em>Clin Cosmet Investig Dermatol.</em> 2024;17:2923-2932. PMID: 39712939
+                    <span class="badge q2">JCR Q2</span>
+                    <span class="badge">共同一作</span>
+                </li>
+                <li class="publication-item">
+                    Dong ZY#, <strong>He MJ#</strong>, Yu YK#, et al. Integrative genetics and multiomics analysis reveal mechanisms...
+                    <em>Sci Rep.</em> 2025;15:2245. PMID: 39824912
+                    <span class="badge q1">JCR Q1</span>
+                    <span class="badge">共同一作</span>
+                </li>
+                <!-- 新增文章：共一作者 -->
+                <li class="publication-item">
+                    Dong ZY#, <strong>He MJ#</strong>, Hu Y. Risk of Autoimmune Skin Diseases Associated With Immune Checkpoint Inhibitors: A Pharmacovigilance Analysis Using the FAERS Database. 
+                    <em>Dermatologic Thevrapy.</em> 2025;2025(1):9922950. DOI: 10.1155/dth/9922950
+                    <span class="badge q1">JCR Q1</span>
+                    <span class="badge">共同一作</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>学术会议</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <strong>生物制剂治疗银屑病及银屑病关节炎引发斑秃的风险：基于FAERS数据库的20年真实世界药物警戒分析</strong>
+                    <p>第七届中国康复医学会皮肤病康复专业委员会学术年会 (2025)</p>
+                    <span class="badge">作者：贺明杰，张江安</span>
+                </li>
+                <li class="publication-item">
+                    <strong>探究免疫和代谢在白癜风发病中的作用及潜在的治疗策略</strong>
+                    <p>中华医学会第二十九次皮肤性病学术年会 (2024)</p>
+                    <span class="badge">作者：贺明杰，张江安</span>
+                </li>
+                <li class="publication-item">
+                    <strong>The causal relationship between uveitis and psoriatic arthritis: A bidirectional Mendelian randomization study</strong>
+                    <p>THE 13th ASIAN DERMATOLOGICAL CONGRESS Notification (2024)</p>
+                    <span class="badge">Authors：Jiangan Zhang, Mingjie He et al.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>荣誉奖项</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🏆 奖学金</h3>
+                    <ul>
+                        <li>本科优秀新生助学金 (2019)</li>
+                        <li>国家励志奖学金 (2020, 2023)</li>
+                        <li>郑州大学一等奖学金 (2021)</li>
+                        <li>新东方奖学金 (2021)</li>
+                        <li>郑州大学二等奖学金 (2022)</li>
+                        <li>郑州大学优秀毕业生奖学金 (2024)</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>🎖️ 综合荣誉</h3>
+                    <ul>
+                        <li>实用新型专利 (ZL 2018 20982544.6)</li>
+                        <li>连续四年校三好学生 (2019-2023)</li>
+                        <li>优秀共青团员 (2020)</li>
+                        <li>优秀青年志愿者 (2020)</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>📜 审稿人证书</h3>
+                    <p>Journal of Holistic Integrative Pharmacy《整合药学杂志（英文）》 独立审稿人 (2025)</p>
+                    <p>Journal of Dermatologic Science and Cosmetic Technology《皮肤科学与化妆品技术杂志（英文）》 独立审稿人 (2025)</p>
+                    <p>Mediators of Inflammation 《炎症介质》JCR Q2 独立审稿人（2025）</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <h2>自我评价</h2>
+            <div class="self-evaluation">
+                <p>具备扎实的皮肤病临床诊疗能力和系统的科研训练，擅长：</p>
+                <ul>
+                    <li>通过多组学方法解析疾病机制</li>
+                    <li>开发基于生物标志物的诊疗策略</li>
+                    <li>跨学科整合临床数据与实验验证</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 贺明杰 | 郑州大学第一附属医院皮肤科</p>
+        <p>科研合作请联系：hmj15238917691@163.com</p>
+    </footer>
+</body>
+</html>
